@@ -15,8 +15,7 @@ import android.widget.ImageView;
 
 public class ProcessMeMainActivity extends Activity {
     private ImageView mImage;
-    private ProcessingTimerHorizontal mTimerHorizontal;// ,
-						       // mTimerHorizontalBlur;
+    private ProcessingTimerHorizontal mTimerHorizontalBlur;
     private ProcessingTimerVertical mTimerVertical;
     private Bitmap originImage, editedImage;
     static Bitmap sBitmap = null;
@@ -32,8 +31,9 @@ public class ProcessMeMainActivity extends Activity {
 		.getHeight(), Bitmap.Config.ARGB_8888);
 	generateNewImage();
 	// mImage.setImageBitmap(originImage);
-	mTimerHorizontal = new ProcessingTimerHorizontal(this, editedImage,
-		mImage);
+	// mTimerHorizontal = new ProcessingTimerHorizontal(this, editedImage,
+	// mImage);
+
 	mTimerVertical = new ProcessingTimerVertical(this, editedImage, mImage);
 	mTimerHorizontalBlur = new ProcessingTimerHorizontalBlur(this,
 		editedImage, mImage);
