@@ -71,15 +71,15 @@ public class ProcessMeMainActivity extends Activity {
 		true);
 	mImage.setImageBitmap(editedImage);
 	mTimerHorizontalBlur.setNewBitmap(editedImage);
-	// mTimerVertical.setNewBitmap(editedImage);
+	mTimerVertical.setNewBitmap(editedImage);
 	super.onActivityResult(requestCode, resultCode, data);
     }
 
     @Override
     protected void onResume() {
 	try {
-	    mTimerHorizontalBlur.run(0, 11);
-	    // mTimerVertical.run(3000, 5);
+	    mTimerHorizontalBlur.run(0, 20);
+	    mTimerVertical.run(3000, 15);
 	} catch (Exception x) {
 	    Log.e("ONRESUME!", x.toString());
 	}
@@ -107,14 +107,14 @@ public class ProcessMeMainActivity extends Activity {
     @Override
     protected void onStop() {
 	mTimerHorizontalBlur.stop();
-	// mTimerVertical.stop();
+	mTimerVertical.stop();
 	super.onStop();
     }
 
     @Override
     protected void onPause() {
 	mTimerHorizontalBlur.stop();
-	// mTimerVertical.stop();
+	mTimerVertical.stop();
 	super.onPause();
     }
 }
