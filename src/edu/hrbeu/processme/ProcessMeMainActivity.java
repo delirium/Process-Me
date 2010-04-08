@@ -42,7 +42,8 @@ public class ProcessMeMainActivity extends Activity {
 	    public void onClick(View v) {
 		Intent i = new Intent(ProcessMeMainActivity.this,
 			CameraPreviewActivity.class);
-		startActivityForResult(i, 666);
+
+		startActivityForResult(i, 667);
 	    }
 	});
 
@@ -77,7 +78,7 @@ public class ProcessMeMainActivity extends Activity {
     @Override
     protected void onResume() {
 	try {
-	    mTimerHorizontalBlur.run(0, 9);
+	    mTimerHorizontalBlur.run(0, 11);
 	    // mTimerVertical.run(3000, 5);
 	} catch (Exception x) {
 	    Log.e("ONRESUME!", x.toString());
