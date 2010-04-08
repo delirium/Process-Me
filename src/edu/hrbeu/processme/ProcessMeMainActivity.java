@@ -77,7 +77,7 @@ public class ProcessMeMainActivity extends Activity {
     @Override
     protected void onResume() {
 	try {
-	    mTimerHorizontalBlur.run(0, 10);
+	    mTimerHorizontalBlur.run(0, 9);
 	    // mTimerVertical.run(3000, 5);
 	} catch (Exception x) {
 	    Log.e("ONRESUME!", x.toString());
