@@ -13,7 +13,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
 
-public class ProcessMeMainActivity extends Activity {
+public class ProcessMeBlurActivity extends Activity {
     private ImageView mImage;
     private ProcessingTimerHorizontal mTimerHorizontalBlur;
     private ProcessingTimerVertical mTimerVertical;
@@ -41,7 +41,7 @@ public class ProcessMeMainActivity extends Activity {
 
 	    @Override
 	    public void onClick(View v) {
-		Intent i = new Intent(ProcessMeMainActivity.this,
+		Intent i = new Intent(ProcessMeBlurActivity.this,
 			CameraPreviewActivity.class);
 
 		startActivityForResult(i, 667);

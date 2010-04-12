@@ -44,7 +44,7 @@ public class CameraPreviewActivity extends Activity implements
 		while (true) {
 		    boolean bNoException = true;
 		    try {
-			ProcessMeMainActivity.sBitmap = BitmapFactory
+			ProcessMeBlurActivity.sBitmap = BitmapFactory
 				.decodeByteArray(imageData, 0, imageData.length);
 		    } catch (OutOfMemoryError x) {
 			bNoException = false;
