@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_gravity="center" android:orientation="vertical">
+<TextView android:text="@+id/TextView01" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_gravity="center" android:gravity="center" android:id="@+id/ProcessingTextView"></TextView><ImageView android:layout_height="wrap_content" android:id="@+id/q2ImageView" android:layout_gravity="center" android:layout_width="fill_parent" android:src="@drawable/q2"></ImageView>
+
+</LinearLayout>

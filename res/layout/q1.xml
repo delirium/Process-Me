@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/alq1">
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"  android:orientation="horizontal" android:id="@+id/llq1">
+<ImageView android:id="@+id/ImageView01" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_gravity="center" android:layout_marginLeft="30sp" android:layout_marginTop="20sp"></ImageView>
+<ImageView android:id="@+id/ImageView02" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_gravity="center" android:layout_marginLeft="30sp" android:layout_marginTop="20sp"></ImageView>
+</LinearLayout>
+<TextView android:id="@+id/q1leftTopTextView" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="" android:layout_x="75dip" android:layout_y="10dip"></TextView>
+<TextView android:id="@+id/q1rightTopTextView" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text=" " android:layout_x="300dip" android:layout_y="10dip"></TextView>
+<TextView android:id="@+id/q1leftBottomTextView" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="" android:layout_x="85dip" android:layout_y="220dip"></TextView>
+<TextView android:id="@+id/q1rightBottomTextView" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text=" " android:layout_x="310dip" android:layout_y="220dip"></TextView>
+</AbsoluteLayout>

@@ -54,5 +54,9 @@ public class MainMenuActivity extends Activity implements OnItemClickListener {
 	    Intent i = new Intent(this, Question1Activity.class);
 	    startActivity(i);
 	}
+	if (item.equals("Question 2")) {
+	    Intent i = new Intent(this, Question2Activity.class);
+	    startActivity(i);
+	}
     }
 }
